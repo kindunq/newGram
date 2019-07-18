@@ -6,13 +6,16 @@
   "author": "east9 <pinkeman@naver.com>",
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
     "graphql-yoga": "^1.18.1",
     "nodemon": "^1.19.1"
   },
-    "scripts": {
-      "dev": "nodemon --exec babel-node src/server.js"
-    }
-  
-  
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "dotenv": "^8.0.0"
+  }
 }
