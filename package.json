@@ -16,6 +16,9 @@
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
-    "dotenv": "^8.0.0"
+    "dotenv": "^8.0.0",
+    "graphql-tools": "^4.0.5",
+    "merge-graphql-schemas": "^1.5.8",
+    "morgan": "^1.9.1"
   }
 }
