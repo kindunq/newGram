@@ -10,7 +10,8 @@
     "nodemon": "^1.19.1"
   },
   "scripts": {
-    "dev": "nodemon --exec babel-node src/server.js"
+    "dev": "nodemon --exec babel-node src/server.js",
+    "deploy": "prisma deploy"
   },
   "dependencies": {
     "@babel/core": "^7.5.5",
