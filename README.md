@@ -1,10 +1,12 @@
 # newGram
-Instagram clone with Express + Prisma + React and React Native
 
+Instagram clone with Express + Prisma + React and React Native
 
 ## User Stories
 
-- [] Log in
+- [x] Create account
+- [] Request Secret
+- [] Confirm Secret (Login)
 - [] Like / unlike a photo
 - [] Commnet on a photo
 - [] Search by user
@@ -13,7 +15,6 @@ Instagram clone with Express + Prisma + React and React Native
 - [] Follow / Unfollow user
 - [] See the full photo
 - [] Edit my profile
-- [] Create account
 - [] Upload photos
 - [] Edit the photo(Delete)
 - [] See the feed
