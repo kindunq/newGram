@@ -23,10 +23,10 @@ const sendMail = (email) => {
 };
 export const sendSecretMail = (address, secret) => {
 	const email = {
-		from: "pinkeman@east9.com",
+		from: "hello@newgram.com",
 		to: address,
 		subject: "Login Secret for newGram",
-		html: `Hello! Your login secret it ${secret}. <br/> Copy paste on the app/website to login `,
+		html: `Hello! Your login secret is <strong>${secret}</strong>. <br/> Copy paste on the app/website to login `,
 	};
 	return sendMail(email);
 };
