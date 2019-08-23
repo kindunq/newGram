@@ -1,5 +1,5 @@
 {
-  "name": "newGram",
+  "name": "newgram",
   "version": "1.0.0",
   "description": "Instagram clone with Express + Prisma + React and React Native",
   "repository": "https://github.com/kindunq/newGram.git",
