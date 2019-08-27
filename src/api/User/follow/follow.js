@@ -7,21 +7,24 @@ export default {
 			isAuthenticated(request);
 			const { id } = args;
 			const { user } = request;
-			console.log(id, user);
-			try {
-				await prisma.updateUser({
-					where: { id: user.id },
-					data: {
-						following: {
-							connect: {
-								id,
+			if (id != user.id) {
+				try {
+					await prisma.updateUser({
+						where: { id: user.id },
+						data: {
+							following: {
+								connect: {
+									id,
+								},
 							},
 						},
-					},
-				});
-				return true;
-			} catch {
-				return false;
+					});
+					return true;
+				} catch {
+					return false;
+				}
+			} else {
+				throw Error("You can't follow yourself.");
 			}
 		},
 	},
