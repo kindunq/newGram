@@ -14,7 +14,7 @@
     "adm": "prisma admin",
     "generate": "prisma generate",
     "prisma": "yarn run deploy && yarn run generate",
-    "dev": "nodemon --exec babel-node src/server.js"
+    "dev": "nodemon --exec babel-node src/server.js --delay 2s"
   },
   "dependencies": {
     "@babel/core": "^7.5.5",
