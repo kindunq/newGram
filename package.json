@@ -7,14 +7,14 @@
   "license": "MIT",
   "devDependencies": {
     "graphql-yoga": "^1.18.1",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.4"
   },
   "scripts": {
     "deploy": "prisma deploy",
     "adm": "prisma admin",
     "generate": "prisma generate",
     "prisma": "yarn run deploy && yarn run generate",
-    "dev": "nodemon --exec babel-node src/server.js --delay 2s"
+    "dev": "nodemon --exec babel-node src/server.js --delay 4s"
   },
   "dependencies": {
     "@babel/core": "^7.5.5",
