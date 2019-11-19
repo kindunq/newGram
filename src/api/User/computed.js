@@ -16,10 +16,9 @@ export default {
 				return false;
 			}
 		},
-		itsMe: (parent, _, { request }) => {
+		isSelf: (parent, _, { request }) => {
 			const { user } = request;
 			const { id: parentId } = parent;
-			console.log(parentId);
 			return user.id === parentId;
 		},
 	},
