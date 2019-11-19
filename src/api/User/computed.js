@@ -5,7 +5,7 @@ export default {
 		fullName: (parent) => {
 			return `${parent.firstName} ${parent.lastName}`;
 		},
-		amIFollowing: async (parent, _, { request }) => {
+		isFollowing: async (parent, _, { request }) => {
 			const { user } = request;
 			const { id: parentId } = parent;
 			try {
