@@ -27,6 +27,8 @@ type Post {
 	user: User!
 	isLiked: Boolean!
 	likeCount: Int!
+	createAt: String
+	updateAt: String
 }
 
 type Like {
