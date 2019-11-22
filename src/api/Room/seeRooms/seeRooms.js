@@ -1,5 +1,5 @@
-import { prisma } from "../../../../generated/prisma-client";
-import { ROOM_FRAGMENT } from "../../../fragment";
+import { prisma } from '../../../../generated/prisma-client';
+import { ROOM_FRAGMENT } from '../../../fragment';
 
 export default {
 	Query: {
@@ -10,11 +10,11 @@ export default {
 				.rooms({
 					where: {
 						participants_some: {
-							id: user.id,
-						},
-					},
+							id: user.id
+						}
+					}
 				})
 				.$fragment(ROOM_FRAGMENT);
-		},
-	},
+		}
+	}
 };

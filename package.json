@@ -6,7 +6,7 @@
 	"author": "east9 <pinkeman@naver.com>",
 	"license": "MIT",
 	"devDependencies": {
-		"graphql-yoga": "^1.18.1",
+		"graphql-yoga": "^1.18.3",
 		"nodemon": "^1.19.4"
 	},
 	"scripts": {
@@ -29,6 +29,7 @@
 		"nodemailer-sendgrid-transport": "^0.2.0",
 		"passport": "^0.4.0",
 		"passport-jwt": "^4.0.0",
-		"prisma-client-lib": "^1.34.3"
+		"prisma": "^1.34.10",
+		"prisma-client-lib": "^1.34.10"
 	}
 }
