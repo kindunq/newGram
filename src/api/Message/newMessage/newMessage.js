@@ -1,4 +1,3 @@
-import { subscribe } from "graphql/subscription";
 import { prisma } from "../../../../generated/prisma-client";
 
 const CREATED = "CREATED";
