@@ -8,7 +8,8 @@ export default {
 			const loginSecret = generateSecret();
 			const existEmail = await prisma.$exists.user({ email: email });
 			if (!existEmail) {
-				throw Error('계정이 존재 하지 않습니다.');
+				//throw Error('계정이 존재 하지 않습니다.');
+				return false;
 			}
 
 			await sendSecretMail(email, loginSecret);
