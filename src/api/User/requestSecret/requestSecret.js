@@ -1,5 +1,5 @@
-import { generateSecret, sendSecretMail } from "../../../utils";
-import { prisma } from "../../../../generated/prisma-client";
+import { generateSecret, sendSecretMail } from '../../../utils';
+import { prisma } from '../../../../generated/prisma-client';
 
 export default {
 	Mutation: {
@@ -14,6 +14,6 @@ export default {
 				console.log(error);
 				return false;
 			}
-		},
-	},
+		}
+	}
 };
