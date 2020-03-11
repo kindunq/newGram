@@ -12,6 +12,7 @@
 	"scripts": {
 		"deploy": "prisma deploy",
 		"adm": "prisma admin",
+		"reset": "prisma reset",
 		"generate": "prisma generate",
 		"prisma": "yarn run deploy && yarn run generate",
 		"dev": "nodemon --exec babel-node src/server.js --delay 4s"
