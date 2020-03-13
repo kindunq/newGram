@@ -1,10 +1,11 @@
-import { prisma } from "../../../generated/prisma-client";
+import { prisma } from '../../../generated/prisma-client';
 
 export default {
 	Post: {
 		files: ({ id }) => prisma.post({ id }).files(),
 		comments: ({ id }) => prisma.post({ id }).comments(),
-		user: ({ id }) => prisma.post({ id }).comments(),
+		user: ({ id }) => prisma.post({ id }).user(),
+		likes: ({ id }) => prisma.post({ id }).likes(),
 		isLiked: (parent, _, { request }) => {
 			const { user } = request;
 			const { id } = parent;
@@ -12,23 +13,30 @@ export default {
 				AND: [
 					{
 						user: {
-							id: user.id,
-						},
+							id: user.id
+						}
 					},
 					{
 						post: {
-							id,
-						},
-					},
-				],
+							id
+						}
+					}
+				]
 			});
 		},
-		likeCount: (parent) =>
+		likeCount: parent =>
 			prisma
 				.likesConnection({
-					where: { post: { id: parent.id } },
+					where: { post: { id: parent.id } }
 				})
 				.aggregate()
 				.count(),
-	},
+		commentCount: parent =>
+			prisma
+				.commentsConnection({
+					where: { post: { id: parent.id } }
+				})
+				.aggregate()
+				.count()
+	}
 };
