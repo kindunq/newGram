@@ -2,7 +2,7 @@ type User {
   id: ID! @id
   avatar: String
     @default(
-      value: "https://scontent-hkg3-1.cdninstagram.com/vp/51ea9f9……74447047_1561961433825017856_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com"
+      value: "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/65570428_2261989583921055_856478579754532864_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=vFq2IM12mBkAX_oLRQ3&oh=a9988d42199e9dbeb9982b21cff285bf&oe=5E9D0F1D"
     )
   username: String! @unique
   email: String! @unique
